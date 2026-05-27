@@ -1,0 +1,289 @@
+/* ──────────────────── shared layout ──────────────────── */
+
+.section {
+  padding: var(--space-7) var(--space-4);
+}
+
+.sectionAlt {
+  padding: var(--space-7) var(--space-4);
+  background: var(--color-tertiary);
+}
+
+.inner {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+.sectionHead {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.sectionHead h2 {
+  margin-bottom: var(--space-2);
+}
+
+.sectionHead p {
+  color: var(--color-muted);
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+/* ──────────────────── hero ──────────────────── */
+
+.hero {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  padding: var(--space-8) var(--space-4);
+  color: var(--color-tertiary);
+}
+
+.heroInner {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-7);
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .heroInner {
+    grid-template-columns: 1fr;
+  }
+
+  .heroImageWrapper {
+    order: -1;
+  }
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.heroPretitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  color: var(--color-tertiary);
+  margin: 0;
+}
+
+.heroLead {
+  font-size: 1.0625rem;
+  opacity: 0.9;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.heroImageWrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.heroImageWrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ──────────────────── história ──────────────────── */
+
+.historyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .historyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .historyImage {
+    order: -1;
+  }
+}
+
+.historyText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.historyText p {
+  margin: 0;
+  line-height: 1.75;
+  color: var(--color-text);
+}
+
+.historyImage {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.historyImage img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ──────────────────── processo ──────────────────── */
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+@media (max-width: 768px) {
+  .processGrid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+}
+
+.processCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.processIcon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.processTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.processDescription {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+  line-height: 1.65;
+}
+
+/* ──────────────────── valores ──────────────────── */
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+@media (max-width: 1024px) {
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.valueCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.valueEmoji {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.valueTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.valueDescription {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+  line-height: 1.65;
+}
+
+/* ──────────────────── contato ──────────────────── */
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contactFormWrapper {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+}
+
+.contactSide {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.contactSideCard {
+  background: var(--color-tertiary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contactSideCard h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.contactSideCard p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+  line-height: 1.65;
+}

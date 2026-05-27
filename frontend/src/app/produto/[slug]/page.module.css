@@ -1,0 +1,208 @@
+/* ================================================================
+   Página de detalhe do produto — /produto/[slug]
+   ================================================================ */
+
+.page {
+  padding: var(--space-6) 0 var(--space-8);
+  min-height: 60vh;
+  background: var(--color-bg);
+}
+
+.inner {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+/* ----------------------------------------------------------------
+   Layout: imagem + dados (2 colunas no desktop)
+   ---------------------------------------------------------------- */
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: var(--space-7);
+  }
+}
+
+/* ----------------------------------------------------------------
+   Seção da imagem
+   ---------------------------------------------------------------- */
+
+.imageSection {
+  position: sticky;
+  top: var(--space-5);
+}
+
+.imageWrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-tertiary);
+  aspect-ratio: 1 / 1;
+  box-shadow: var(--shadow-md);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.imageWrapper:hover .image {
+  transform: scale(1.03);
+}
+
+/* ----------------------------------------------------------------
+   Coluna de dados
+   ---------------------------------------------------------------- */
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* Categoria (link) */
+.category {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.category:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* Nome do produto */
+.name {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Descrição longa */
+.description {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+/* ----------------------------------------------------------------
+   Seção de preço
+   ---------------------------------------------------------------- */
+
+.priceSection {
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  margin: 0;
+}
+
+.priceFrom {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.priceValue {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.priceOnRequest {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  font-style: italic;
+}
+
+/* ----------------------------------------------------------------
+   CTA WhatsApp
+   ---------------------------------------------------------------- */
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  align-items: flex-start;
+}
+
+.ctaSupport {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  width: 100%;
+  text-align: center;
+}
+
+/* ----------------------------------------------------------------
+   Tags
+   ---------------------------------------------------------------- */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding-top: var(--space-1);
+}
+
+.tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.25em 0.9em;
+  border-radius: 999px;
+  background: var(--color-tertiary);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-border);
+  letter-spacing: 0.03em;
+}
+
+/* ----------------------------------------------------------------
+   Bloco de sugestões
+   ---------------------------------------------------------------- */
+
+.suggestions {
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.suggestionsTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 var(--space-5);
+}
+
+.suggestionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-4);
+}

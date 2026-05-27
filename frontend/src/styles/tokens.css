@@ -1,0 +1,41 @@
+:root {
+  /* Paleta da marca */
+  --color-primary: #720c0c;
+  --color-primary-dark: #5a0909;
+  --color-secondary: #885d31;
+  --color-tertiary: #fbebc5;
+  --color-bg: #fdf8ee;
+  --color-text: #2a1a0d;
+  --color-muted: #7a6a5a;
+  --color-white: #ffffff;
+  --color-border: #e8d9b8;
+
+  /* Tipografia — variáveis injetadas via next/font no layout.tsx */
+  --font-display: var(--font-display-fallback), 'Great Vibes', 'Allura', cursive;
+  --font-body: var(--font-body-fallback), system-ui, -apple-system, sans-serif;
+
+  /* Espaçamento (escala 4pt) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4rem;
+  --space-8: 6rem;
+
+  /* Layout */
+  --max-content-width: 1200px;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+
+  /* Sombras */
+  --shadow-sm: 0 1px 3px rgba(42, 26, 13, 0.08);
+  --shadow-md: 0 4px 12px rgba(42, 26, 13, 0.12);
+
+  /* Breakpoints (referência — usar em media queries) */
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+}

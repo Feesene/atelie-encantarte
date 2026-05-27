@@ -1,0 +1,100 @@
+/* ──────────────────── hero ──────────────────── */
+
+.hero {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  padding: var(--space-8) var(--space-4);
+  text-align: center;
+  color: var(--color-tertiary);
+}
+
+.heroInner {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.pretitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--color-tertiary);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 1.0625rem;
+  opacity: 0.9;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ──────────────────── grid masonry ──────────────────── */
+
+.gridSection {
+  padding: var(--space-7) var(--space-4);
+  background: var(--color-bg);
+}
+
+.inner {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+.masonryGrid {
+  columns: 3;
+  column-gap: var(--space-5);
+}
+
+@media (max-width: 1024px) {
+  .masonryGrid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonryGrid {
+    columns: 1;
+  }
+}
+
+/* ──────────────────── CTA ──────────────────── */
+
+.ctaSection {
+  background: var(--color-tertiary);
+  padding: var(--space-7) var(--space-4);
+}
+
+.ctaInner {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.ctaTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.ctaText {
+  font-size: 1.0625rem;
+  color: var(--color-muted);
+  line-height: 1.65;
+  margin: 0;
+  max-width: 38rem;
+}
