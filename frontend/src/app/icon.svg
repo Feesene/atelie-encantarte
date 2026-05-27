@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32">
+  <!-- Corpo da agulha -->
+  <line x1="20" y1="80" x2="75" y2="25" stroke="#b5838d" stroke-width="5" stroke-linecap="round"/>
+  <!-- Ponta da agulha -->
+  <line x1="75" y1="25" x2="85" y2="15" stroke="#b5838d" stroke-width="3" stroke-linecap="round"/>
+  <!-- Fundo do olho da agulha -->
+  <ellipse cx="22" cy="78" rx="7" ry="5" transform="rotate(-45 22 78)" fill="none" stroke="#b5838d" stroke-width="3"/>
+  <!-- Linha passando pelo olho -->
+  <path d="M 15 85 Q 22 72 30 80" fill="none" stroke="#e8a0b4" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
