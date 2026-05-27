@@ -15,7 +15,6 @@
     "resolveJsonModule": true,
     "declaration": true,
     "sourceMap": true,
-    "baseUrl": ".",
     "paths": {
       "@atelie-encantarte/shared": ["./shared/src"],
       "@atelie-encantarte/shared/*": ["./shared/src/*"]
