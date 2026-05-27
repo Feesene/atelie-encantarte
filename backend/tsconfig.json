@@ -9,8 +9,8 @@
     "experimentalDecorators": true,
     "noEmit": false,
     "paths": {
-      "@atelie-encantarte/shared": ["../shared/src"],
-      "@atelie-encantarte/shared/*": ["../shared/src/*"]
+      "@atelie-encantarte/shared": ["../shared/dist"],
+      "@atelie-encantarte/shared/*": ["../shared/dist/*"]
     }
   },
   "include": ["src/**/*"],
