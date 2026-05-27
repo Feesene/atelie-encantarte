@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { Inter, Great_Vibes } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { WhatsAppButton } from '../components/WhatsAppButton';
@@ -72,6 +74,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {children}
         <Footer />
         <WhatsAppButton variant="floating" />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
