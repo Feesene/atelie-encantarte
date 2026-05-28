@@ -8,7 +8,7 @@ import styles from './page.module.css';
 export const metadata: Metadata = {
   title: 'Catálogo de Produtos',
   description:
-    'Explore todos os bordados artesanais do Ateliê Encantarte: roupas personalizadas, quadros decorativos, presentes e peças exclusivas feitas à mão.',
+    'Explore todos os bordados artesanais do Ateliê Encantarte: bastidores porta maternidade, quadros e toalhas personalizadas feitas à mão.',
 };
 
 export default function CatalogoPage() {

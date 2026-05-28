@@ -30,7 +30,7 @@ export function generateMetadata({
   }
 
   return {
-    title: `${category.name} Bordados`,
+    title: `${category.name} | Ateliê Encantarte`,
     description: `${category.description} Feitos à mão pelo Ateliê Encantarte.`,
   };
 }

@@ -1,4 +1,4 @@
-export type ProductCategorySlug = 'roupas' | 'quadros' | 'presentes' | 'exclusivos';
+export type ProductCategorySlug = 'bastidores' | 'quadros' | 'toalhas';
 
 export interface ProductCategory {
   slug: ProductCategorySlug;
@@ -47,23 +47,18 @@ export interface ContactMessage extends ContactMessageInput {
 
 export const PRODUCT_CATEGORIES: ProductCategory[] = [
   {
-    slug: 'roupas',
-    name: 'Roupas Personalizadas',
-    description: 'Bordados delicados em peças escolhidas com carinho.',
+    slug: 'bastidores',
+    name: 'Bastidor Porta Maternidade',
+    description: 'Bastidores bordados à mão para anunciar a chegada do bebê na porta da maternidade.',
   },
   {
     slug: 'quadros',
-    name: 'Quadros Decorativos',
-    description: 'Arte em ponto e linha para encantar qualquer ambiente.',
+    name: 'Quadros',
+    description: 'Quadros emoldurados com bordado personalizado para decorar o quarto.',
   },
   {
-    slug: 'presentes',
-    name: 'Presentes Personalizados',
-    description: 'Lembranças únicas para quem você ama.',
-  },
-  {
-    slug: 'exclusivos',
-    name: 'Peças Exclusivas',
-    description: 'Criações únicas, feitas sob encomenda especial.',
+    slug: 'toalhas',
+    name: 'Toalhas Personalizadas',
+    description: 'Toalhas e fraldinhas bordadas com o nome e detalhes únicos.',
   },
 ];

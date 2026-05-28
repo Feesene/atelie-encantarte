@@ -8,21 +8,17 @@ import { WhatsAppButton } from '../components/WhatsAppButton';
 import styles from './page.module.css';
 
 const CATEGORY_IMAGES: Record<string, { src: string; alt: string }> = {
-  roupas: {
-    src: 'https://placehold.co/400x300/720c0c/fbebc5?text=Roupas',
-    alt: 'Capa da categoria Roupas Personalizadas',
+  bastidores: {
+    src: '/portifolio/bordado-laviniaelivia.jpeg',
+    alt: 'Capa da categoria Bastidor Porta Maternidade',
   },
   quadros: {
-    src: 'https://placehold.co/400x300/885d31/fbebc5?text=Quadros',
-    alt: 'Capa da categoria Quadros Decorativos',
+    src: '/portifolio/quadro-rafaela.jpeg',
+    alt: 'Capa da categoria Quadros',
   },
-  presentes: {
-    src: 'https://placehold.co/400x300/720c0c/fbebc5?text=Presentes',
-    alt: 'Capa da categoria Presentes Personalizados',
-  },
-  exclusivos: {
-    src: 'https://placehold.co/400x300/885d31/fbebc5?text=Exclusivos',
-    alt: 'Capa da categoria Peças Exclusivas',
+  toalhas: {
+    src: '/portifolio/toalha-cecilia.jpeg',
+    alt: 'Capa da categoria Toalhas Personalizadas',
   },
 };
 
@@ -70,7 +66,7 @@ export default function HomePage() {
                 shortDescription={product.shortDescription}
                 priceFromBRL={product.priceFromBRL}
                 image={{
-                  src: `https://placehold.co/400x400/720c0c/fbebc5?text=${encodeURIComponent(product.name)}`,
+                  src: product.images[0].url,
                   alt: product.images[0]?.alt ?? product.name,
                 }}
               />

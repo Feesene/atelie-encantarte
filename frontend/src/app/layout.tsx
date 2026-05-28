@@ -56,7 +56,7 @@ const organizationSchema = {
   '@type': 'Organization',
   name: 'Ateliê Encantarte',
   description: 'Marca de bordados artesanais — roupas, quadros e presentes personalizados.',
-  url: 'https://atelieencantarte.com.br',
+  url: 'https://atelie-encantarte.vercel.app/',
   sameAs: ['https://instagram.com/atelieencantartebordados'],
 };
 

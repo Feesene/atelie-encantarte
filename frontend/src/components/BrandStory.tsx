@@ -11,7 +11,7 @@ export function BrandStory() {
       <div className={styles.inner}>
         <div className={styles.imageWrapper}>
           <Image
-            src="https://placehold.co/500x625/885d31/fbebc5?text=Foto+da+artes%C3%A3"
+            src="/portifolio/bordado-A.jpeg"
             alt="Artesã do Ateliê Encantarte trabalhando em um bordado"
             width={500}
             height={625}

@@ -84,7 +84,7 @@ export default function SobrePage() {
           </div>
           <div className={styles.heroImageWrapper}>
             <Image
-              src="https://placehold.co/560x640/720c0c/fbebc5?text=Foto+da+artes%C3%A3"
+              src="/portifolio/bordado-A.jpeg"
               alt="Artesã do Ateliê Encantarte bordando à mão"
               width={560}
               height={640}
@@ -126,8 +126,9 @@ export default function SobrePage() {
               </p>
             </div>
             <div className={styles.historyImage}>
+              dsds
               <Image
-                src="https://placehold.co/480x560/885d31/fbebc5?text=Detalhe+do+bordado"
+                src="/quadro-tomas.jpeg"
                 alt="Detalhe de bordado artesanal do Ateliê Encantarte"
                 width={480}
                 height={560}

@@ -22,7 +22,7 @@ export function Hero() {
         </div>
         <div className={styles.imageWrapper}>
           <Image
-            src="https://placehold.co/600x750/720c0c/fbebc5?text=Bordado+em+destaque"
+            src="/quadro-tomas.jpeg"
             alt="Detalhe de bordado artesanal do Ateliê Encantarte"
             width={600}
             height={750}
